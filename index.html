@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Student Life Survey</title>
+</head>
+<body>
+  <h1 id="title">Survey on Student Life in Terengganu</h1>
+  <p id="description">We want to understand your experiences as a student in Terengganu — from workshops and clubs to campus facilities. Please share your thoughts below.</p>
+
+  <form id="survey-form">
+    <!-- Name -->
+    <label id="name-label" for="name">Full Name:</label>
+    <input id="name" type="text" placeholder="Enter your name" required>
+
+    <!-- Email -->
+    <label id="email-label" for="email">Email Address:</label>
+    <input id="email" type="email" placeholder="Enter your email" required>
+
+    <!-- Number -->
+    <label id="number-label" for="number">Age:</label>
+    <input id="number" type="number" min="16" max="60" placeholder="Enter your age">
+
+    <!-- Dropdown -->
+    <label for="dropdown">Which campus activity do you enjoy most?</label>
+    <select id="dropdown">
+      <option value="sports">Sports</option>
+      <option value="clubs">Student Clubs</option>
+      <option value="volunteering">Volunteering</option>
+      <option value="academic">Academic Talks</option>
+    </select>
+
+    <!-- Radio Buttons -->
+    <p>Do you feel student events help build community?</p>
+    <input type="radio" name="community" value="yes"> Yes
+    <input type="radio" name="community" value="no"> No
+
+    <!-- Checkboxes -->
+    <p>Which facilities do you use most on campus?</p>
+    <input type="checkbox" value="library"> Library
+    <input type="checkbox" value="sports-complex"> Sports Complex
+    <input type="checkbox" value="labs"> Laboratories
+    <input type="checkbox" value="student-center"> Student Center
+
+    <!-- Textarea -->
+    <label for="comments">Additional Comments:</label>
+    <textarea id="comments" placeholder="Share your suggestions or experiences..."></textarea>
+
+    <!-- Submit Button -->
+    <button id="submit" type="submit">Submit</button>
+  </form>
+</body>
+</html>
+
